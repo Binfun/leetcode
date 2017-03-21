@@ -1,7 +1,7 @@
 //https://leetcode.com/problems/median-of-two-sorted-arrays/
 double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size) {
         int LA,RA,LB,RB;
-        unsigned int temp = 0xfffffffffffffffffff;
+        unsigned int temp = ~0;
         int MAX = temp >> 1,MIN = (-1-MAX);
         int CA,CB;
         int lo,hi;
